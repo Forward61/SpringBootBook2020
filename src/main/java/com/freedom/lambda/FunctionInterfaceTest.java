@@ -31,6 +31,15 @@ public class FunctionInterfaceTest {
         Integer integer = operator.apply(20,10);
         System.out.println(integer);
 
+        test(() -> "我是一个演示的函数式接口");
+    }
 
+    public static  void test(Worker worker){
+        String work = worker.work();
+        System.out.println(work);
+    }
+
+    public interface Worker{
+        String work();
     }
 }
