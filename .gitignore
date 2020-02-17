@@ -32,4 +32,4 @@ build/
 
 
 #ingore  yaml |propertuis files
-*.yaml
+*.yml
