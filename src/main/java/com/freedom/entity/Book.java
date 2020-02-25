@@ -2,16 +2,14 @@ package com.freedom.entity;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * Created by freedom on 2020/2/6.
  */
 @Entity
 @Data
+@Table(name = "t_bookinfo")
 public class Book {
 
     @Id
