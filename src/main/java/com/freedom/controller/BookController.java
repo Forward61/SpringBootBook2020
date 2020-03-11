@@ -73,6 +73,7 @@ public class BookController  implements QueryInterface {
         Example<Book> example = Example.of(book);
         List<Book> resultList = bookRepository.findAll(example);
 
+
         return resultList;
     }
 
@@ -80,11 +81,12 @@ public class BookController  implements QueryInterface {
 
     @Override
     public List<Book> queryBook(String bookname) {
-        return null;
+
+        return bookRepository.queryBook("j");
     }
 
-//    @Override
-//    public List<Book> searchQuery(Book book) {
-//        return null;
-//    }
+    @GetMapping("/searchQuery")
+    public List<Book> searchQuery(Book book) {
+        return bookRepository.queryBook("s");
+    }
 }

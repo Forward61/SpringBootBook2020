@@ -11,6 +11,6 @@ public interface QueryInterface {
 //    @Query("select * from book u where u.bookname like %?1%")
 //    public List<Book> searchQuery(@Param("bookname") String bookname);
 
-    @Query(value = "select * from book u where u.bookname like %?1%", nativeQuery = true)
+    @Query(value = "select * from book u where u.bookname like %?1% or u.bookauthor like %?1%", nativeQuery = true)
     List<Book> queryBook(String bookname);
 }
