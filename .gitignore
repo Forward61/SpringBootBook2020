@@ -33,3 +33,4 @@ build/
 
 #ingore  yaml |propertuis files
 *.yml
+!/src/main/resources/application.yml

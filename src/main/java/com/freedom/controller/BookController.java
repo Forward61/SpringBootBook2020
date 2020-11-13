@@ -86,7 +86,7 @@ public class BookController  implements QueryInterface {
     }
 
     @GetMapping("/searchQuery")
-    public List<Book> searchQuery(Book book) {
-        return bookRepository.queryBook("s");
+    public List<Book> searchQuery(@RequestParam(value = "searchparam") String param) {
+        return bookRepository.queryBook(param);
     }
 }

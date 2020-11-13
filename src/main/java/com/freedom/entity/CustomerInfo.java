@@ -1,8 +1,6 @@
 package com.freedom.entity;
 
-import com.sun.xml.internal.ws.api.ha.StickyFeature;
 import lombok.Data;
-import org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
